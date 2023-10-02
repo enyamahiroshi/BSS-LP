@@ -1,0 +1,34 @@
+/* ----------------------------------------------------------------
+  ヘッダーのレイアウト
+---------------------------------------------------------------- */
+.header {
+  padding: 15px;
+  background-color: #E2825F;
+  .main-catchcopy{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: calc(28 / 18);
+    letter-spacing: #{calc(300 / 1000) + 'em'};
+    color: #fff;
+    text-align: center;
+    .pc{
+      display: none;
+    }
+  }
+}
+@include res_min( $break ){
+  .header {
+    padding: 0.85em 2em;
+    .main-catchcopy{
+      font-size: clamp(2rem, 2.6vw, 3.3rem);
+      line-height: 1;
+      br,
+      .sp{
+        display: none;
+      }
+      .pc{
+        display: inline;
+      }
+    }
+  }
+}

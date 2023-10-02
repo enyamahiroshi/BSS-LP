@@ -1,0 +1,69 @@
+/* ----------------------------------------------------------------
+  見出し
+---------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------
+  ボタン関連
+---------------------------------------------------------------- */
+.button{
+  @include flex(nowrap, center, center);
+  margin: 0 auto;
+  padding: 18px 20px;
+  width: 100%;
+  border-radius: 14px;
+  background: linear-gradient(-90deg, #ffc60a 0%, #e6780a 100%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: calc(30 / 18);
+  text-align: center;
+  &:link, &:visited{
+    color: #fff;
+  }
+  &:hover, &:active{
+    text-decoration: none;
+  }
+}
+@include res_min( $break ){
+  .button{
+    padding: 23px 1em;
+    max-width: 1040px;
+    font-size: 3.2rem;
+    line-height: calc(50 / 30);
+    &:link, &:visited{
+      color: #fff;
+    }
+  }
+}
+
+
+/* ----------------------------------------------------------------
+  その他
+---------------------------------------------------------------- */
+//
+.sp{}
+.pc{
+  display: none;
+}
+@include res_min( $break ){
+  .sp{
+    display: none;
+  }
+  .pc{
+    display: block;
+  }
+}
+
+// telリンク
+.link_tel {
+  &:hover, &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+@include res_min( $break ){
+  .link_tel {
+    pointer-events: none;
+  }
+}

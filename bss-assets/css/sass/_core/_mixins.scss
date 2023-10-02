@@ -1,0 +1,79 @@
+// ----------------------------------------------------------------
+// * Mixins
+// ----------------------------------------------------------------
+
+// トランジション
+@mixin transition($trg: all, $time: .1) {
+  transition: $trg #{$time + s} linear 0s;
+}
+
+//レスポンシブの指定
+@mixin res_min($size: $break) {
+  @media only screen and (min-width: $size + 'px') {
+    @content;
+  }
+}
+@mixin res_max($size: $break) {
+  @media only screen and (max-width: $size + 'px') {
+    @content;
+  }
+}
+
+//max-width
+@mixin maxW($size: $maxsize) {
+  width: 100%;
+  max-width: calc(#{$size + px} + 70px);
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  @include res_min( $break ){
+    max-width: calc(#{$size + px} + 8%);
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@mixin maxW2($size: $maxsize) {
+  width: 100%;
+  max-width: calc(#{$size + px} + 40px);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @include res_min( $break ){
+    max-width: calc(#{$size + px} + 8%);
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@mixin maxW3($size: $maxsize) {
+  width: 100%;
+  max-width: calc(#{$size + px} + 50px);
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  @include res_min( $break ){
+    max-width: calc(#{$size + px} + 8%);
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+//flexbox
+@mixin flex($wrap: wrap, $justify: flex-start, $alignitems: center){
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $alignitems;
+}
+
+// flex-bases
+@mixin flexbases($marginRight, $separateItems){
+  $cntSep: $separateItems - 1;
+  flex-basis: calc((100% / #{$separateItems}) - ((#{$marginRight * $cntSep + px} / #{$separateItems})));
+  margin: #{$marginRight + px} #{$marginRight + px} 0 0;
+  &:nth-of-type(#{$separateItems + n}) {
+    margin-right: 0;
+  }
+}

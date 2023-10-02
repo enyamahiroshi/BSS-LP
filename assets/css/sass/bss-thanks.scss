@@ -1,0 +1,136 @@
+/* CSS Document */
+
+$pink: #FB877E;//	rgba(251, 136, 126, 1)
+$green: #07B53B;
+$white: #FFF;
+
+.colorGreen {
+	color: $green;
+}
+.txtCenter {
+	text-align: center;
+}
+.to-entry {
+	margin-bottom: 50px;
+	padding: 0px 10px 20px;
+	font-size: min(4.8vw, 3rem);
+	font-weight: 600;
+	text-align: center;
+	position: relative;
+	&::after {
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: transparent;
+		border-width: 20px 30px;
+		border-top-color: currentColor;
+		border-bottom: 0;
+		color: $pink;
+		line-height: 1;
+		vertical-align: middle;
+		position: absolute;
+		left: 50%;
+		bottom: -20px;
+		transform: translateX(-50%);
+		content: "";
+	}
+}
+a {
+	.line-icon {
+		width: 3em;
+		margin-right: 10px;
+		vertical-align: top;
+	}
+}
+
+header#thanks-attention {
+	text-align: center;
+	h1 {
+		padding: 20px 10px;
+		background-color: $pink;
+		color: $white;
+		font-size: 4rem;
+		font-weight: 600;
+		line-height: 1em;
+		img {
+			width: .9em;
+			margin-right: 5px;
+			vertical-align: top;
+		}
+		span {
+			display: block;
+			font-size: 2.5rem;
+		}
+	}
+	section {
+		padding: 30px 0px 50px;
+		background: url("../../thanks/img/bg01.jpg") center bottom no-repeat;
+		background-size: cover;
+		p {
+			text-shadow: 0 0 10px rgba(255, 255, 255, .5);
+			text-align: center;
+		}
+	}
+}
+#thanks-qr {
+	padding: 50px 0px;
+	.inner {
+		.qr-left, .qr-right {
+			margin-bottom: 30px;
+			text-align: center;
+			img {
+				max-width: 100%;
+				width: auto;
+			}
+		}
+		.qr-left {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: #FCF9F9;
+//			border: $pink 1px solid;
+				border-radius: 8px;
+			& > div {
+				margin-bottom: 20px;
+			}
+		}
+		p {
+			width: 100%;
+			text-align: center;
+		}
+		div.qr-btn {
+			width: 100%;
+			p {
+				margin-top: 1em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:768px) {
+	a {
+		.line-icon {
+			width: .9em;
+		}
+	}
+	header#thanks-attention {
+		section {
+			padding: 100px 0px 100px;
+		}
+	}
+	#thanks-qr {
+		padding: 100px 0px;
+		.inner {
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			.qr-left, .qr-right {
+				width: 40%;
+			}
+		}
+	}
+}
+
