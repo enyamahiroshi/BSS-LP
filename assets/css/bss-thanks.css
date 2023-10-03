@@ -1,1 +1,125 @@
-.colorGreen{color:#07b53b}.txtCenter{text-align:center}.to-entry{margin-bottom:50px;padding:0px 10px 20px;font-size:min(4.8vw,3rem);font-weight:600;text-align:center;position:relative}.to-entry::after{display:block;width:0;height:0;border-style:solid;border-color:rgba(0,0,0,0);border-width:20px 30px;border-top-color:currentColor;border-bottom:0;color:#fb877e;line-height:1;vertical-align:middle;position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);content:""}a .line-icon{width:3em;margin-right:10px;vertical-align:top}header#thanks-attention{text-align:center}header#thanks-attention h1{padding:20px 10px;background-color:#fb877e;color:#fff;font-size:4rem;font-weight:600;line-height:1em}header#thanks-attention h1 img{width:.9em;margin-right:5px;vertical-align:top}header#thanks-attention h1 span{display:block;font-size:2.5rem}header#thanks-attention section{padding:30px 0px 50px;background:url("../../thanks/img/bg01.jpg") center bottom no-repeat;background-size:cover}header#thanks-attention section p{text-shadow:0 0 10px rgba(255,255,255,.5);text-align:center}#thanks-qr{padding:50px 0px}#thanks-qr .inner .qr-left,#thanks-qr .inner .qr-right{margin-bottom:30px;text-align:center}#thanks-qr .inner .qr-left img,#thanks-qr .inner .qr-right img{max-width:100%;width:auto}#thanks-qr .inner .qr-left{display:flex;justify-content:center;align-items:center;flex-direction:column;background-color:#fcf9f9;border-radius:8px}#thanks-qr .inner .qr-left>div{margin-bottom:20px}#thanks-qr .inner p{width:100%;text-align:center}#thanks-qr .inner div.qr-btn{width:100%}#thanks-qr .inner div.qr-btn p{margin-top:1em}@media only screen and (min-width: 768px){a .line-icon{width:.9em}header#thanks-attention section{padding:100px 0px 100px}#thanks-qr{padding:100px 0px}#thanks-qr .inner{display:flex;flex-direction:row-reverse;flex-wrap:wrap;justify-content:space-around}#thanks-qr .inner .qr-left,#thanks-qr .inner .qr-right{width:40%}}/*# sourceMappingURL=bss-thanks.css.map */
+/* CSS Document */
+.colorGreen {
+  color: #07B53B;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.to-entry {
+  margin-bottom: 50px;
+  padding: 0px 10px 20px;
+  font-size: min(4.8vw, 3rem);
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+.to-entry::after {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 20px 30px;
+  border-top-color: currentColor;
+  border-bottom: 0;
+  color: #FB877E;
+  line-height: 1;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  content: "";
+}
+
+a .line-icon {
+  width: 3em;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+header#thanks-attention {
+  text-align: center;
+}
+header#thanks-attention h1 {
+  padding: 20px 10px;
+  background-color: #FB877E;
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1em;
+}
+header#thanks-attention h1 img {
+  width: 0.9em;
+  margin-right: 5px;
+  vertical-align: top;
+}
+header#thanks-attention h1 span {
+  display: block;
+  font-size: 2.5rem;
+}
+header#thanks-attention section {
+  padding: 30px 0px 50px;
+  background: url("../../thanks/img/bg01.jpg") center bottom no-repeat;
+  background-size: cover;
+}
+header#thanks-attention section p {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+#thanks-qr {
+  padding: 50px 0px;
+}
+#thanks-qr .inner .qr-left, #thanks-qr .inner .qr-right {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#thanks-qr .inner .qr-left img, #thanks-qr .inner .qr-right img {
+  max-width: 100%;
+  width: auto;
+}
+#thanks-qr .inner .qr-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FCF9F9;
+  border-radius: 8px;
+}
+#thanks-qr .inner .qr-left > div {
+  margin-bottom: 20px;
+}
+#thanks-qr .inner p {
+  width: 100%;
+  text-align: center;
+}
+#thanks-qr .inner div.qr-btn {
+  width: 100%;
+}
+#thanks-qr .inner div.qr-btn p {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  a .line-icon {
+    width: 0.9em;
+  }
+  header#thanks-attention section {
+    padding: 100px 0px 100px;
+  }
+  #thanks-qr {
+    padding: 100px 0px;
+  }
+  #thanks-qr .inner {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #thanks-qr .inner .qr-left, #thanks-qr .inner .qr-right {
+    width: 40%;
+  }
+}/*# sourceMappingURL=bss-thanks.css.map */
